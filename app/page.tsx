@@ -8,14 +8,13 @@ export default function Home() {
         <div className="mx-auto max-w-5xl px-6 py-10 flex flex-col gap-6 sm:flex-row sm:items-center">
           <div className="flex items-center gap-5">
             <div className="h-24 w-24 overflow-hidden rounded-full ring-2 ring-white/20">
-              <Image
+             <Image
                 src="/profile.jpg"
-                alt="Cody Johnson headshot"
-                width={160}
-                height={160}
-                className="h-full w-full object-cover"
-                priority
-              />
+                 alt="Cody Johnson headshot"
+                 width={160}
+                 height={160}
+                className="h-full w-full object-cover object-top"
+                priority/>
             </div>
 
             <div>
@@ -46,9 +45,9 @@ export default function Home() {
 
       {/* Body */}
       <div className="mx-auto max-w-5xl px-6 py-10">
-        <div className="grid gap-6 md:grid-cols-[320px_1fr]">
+        <div className="grid gap-6 md:grid-cols-[320px_1fr] md:items-start">
           {/* Left sidebar */}
-          <aside className="rounded-2xl bg-slate-50 border p-6">
+          <aside className="rounded-2xl bg-slate-50 border p-6 md:sticky md:top-6 h-fit">
             {/* Contact */}
             <section id="contact">
               <h2 className="text-sm font-semibold uppercase tracking-wider text-slate-600">
@@ -60,7 +59,7 @@ export default function Home() {
                   <span className="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-slate-200 text-slate-700">
                     @
                   </span>
-                  <span className="break-all">Cody.Ramsdell@gmail.com</span>
+                  <span className="break-all">Codyy.johnson@icloud.com</span>
                 </a>
 
                 <a className="flex items-center gap-3 hover:underline" href="tel:+12182200489">
@@ -74,7 +73,7 @@ export default function Home() {
                   <span className="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-slate-200 text-slate-700">
                     ⌂
                   </span>
-                  <span>Thief River Falls, MN</span>
+                  <span>Minneosta, USA</span>
                 </div>
               </div>
             </section>
